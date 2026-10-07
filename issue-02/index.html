@@ -611,7 +611,7 @@
         <p class="kicker">Go back for seconds</p>
         <h3 id="upsell-annual-title">Every other issue we've printed, in one box.</h3>
         <p>Add Issues #00, #01 and #03 — the rest of the Autostraddle print run — to ship alongside your FREE Issue #02. One box, zero gaps on the shelf.</p>
-        <a class="upsell-cta" href="#" data-cta="upsell-to-bundle" data-plan="annualbundle" data-upsell-continue="1">Add all three +$90 →</a>
+        <a class="upsell-cta" href="#" data-cta="upsell-to-bundle" data-plan="annualbundle" data-upsell-continue="1">Add all three +$63 →</a>
         <a class="upsell-no" href="#" data-cta="upsell-annual-continue" data-plan="annual" data-upsell-continue="1">Just Issue #02 for now</a>
     </div>
 </div>
@@ -683,7 +683,7 @@
             const loc = this.getAttribute('data-cta');
             const plan = this.getAttribute('data-plan');
             const stamp = this.dataset.utmContent || loc;
-            const value = plan === 'quarterly' ? 28 : plan === 'oneoff' ? 30 : plan === 'annualbundle' ? 188 : 98;
+            const value = plan === 'quarterly' ? 28 : plan === 'oneoff' ? 30 : plan === 'annualbundle' ? 161 : 98;
 
             if (typeof posthog !== 'undefined') {
                 posthog.capture('issue02_cta_clicked', { position: loc, plan: plan, page: 'issue02_lp', value: value, utm_content: stamp });
